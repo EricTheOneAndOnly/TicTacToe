@@ -197,6 +197,12 @@ public class TicTacToeController {
                 return 1;
             }
         }
+
+        // check draw
+        if (round == 9) {
+            return 3;
+        }
+
         return 0;
     }
 }
