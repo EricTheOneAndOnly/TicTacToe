@@ -9,6 +9,12 @@ import javafx.scene.layout.Pane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
+/**
+ * This class controlls the JavaFX UI.
+ *
+ * @author gahlieri
+ * @version 2023-09-22
+ */
 public class TicTacToeController {
     @FXML
     private Pane pane1;
@@ -134,6 +140,8 @@ public class TicTacToeController {
     }
 
     /**
+     * This method checks if someone won, if it's a draw or if the game isn't finished
+     *
      * @return 0 = no Winner, 1 = Player 1 won, 2 = Player 2 won, 3 = draw
      */
     private int checkWinner() {
